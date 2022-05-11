@@ -5,5 +5,8 @@
         <packages>
             <package name="class02"></package>
         </packages>
+            <classes>
+                <class name="class01.BasicAnnotations"></class>
+            </classes>
     </test>
 </suite>
