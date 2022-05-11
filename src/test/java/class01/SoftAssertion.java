@@ -23,7 +23,7 @@ public class SoftAssertion {
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
     }
 
-    @Test
+    @Test(groups = "regression")
     public void VerifyCredentials() {
 
         //we are creating the object of Soft Assert because it is not included by default in TestNG
@@ -49,6 +49,11 @@ public class SoftAssertion {
         //        check all asseertions
         soft.assertAll();
 
+    }
+
+    @Test(groups = "smoke")
+    public void loginTest2(){
+        System.out.println("I am smoke test for login");
     }
 
     @AfterMethod

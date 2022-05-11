@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class BasicAnnotations {
 
-    @Test
+    @Test(groups = "smoke")
     public void cfirstTest(){
         System.out.println("this is my first test");
     }
