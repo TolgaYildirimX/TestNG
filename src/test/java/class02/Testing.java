@@ -1,7 +1,16 @@
 package class02;
 
+import org.testng.annotations.Test;
+
 public class Testing {
-    public static void main(String[] args) {
-        System.out.println("test");
+
+    @Test
+    public void test(){
+        System.out.println("fist");
+    }
+
+    @Test
+    public void test2(){
+        System.out.println("second");
     }
 }
